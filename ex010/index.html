@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Borda - RGB</title>
+
+    <style>
+
+        @keyframes shake-box{
+            from{
+                transform: translate(2%, 6%);
+            }
+            to{
+                transform: translate(-1%, -3%);
+            }
+
+            /*rgb-border*/
+
+            0%{
+                border-color: red;
+                border-radius: 10px 0 10px 0;
+            }
+            50%{
+                border-color: blue;
+                border-radius: 0 20px 0 20px;
+            }
+            100%{
+                border-color: yellow;
+                border-radius: 10px 0 10px 0;
+            }
+        }
+        
+        
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-size: 1em;
+        }
+
+        body{
+            width: 100vw;
+            height: 100vh;
+
+            background-size: 300% 300%;
+            background: linear-gradient(45deg, red, orange);
+        }
+
+        div{
+            position: relative;
+            top: 110px;
+
+            margin: auto;
+            width: 50vw;
+            height: 55vh;
+
+            border-radius: 70px 0 70px 0;
+            border-color: red;
+            border: red 10px solid;
+            color: white;
+            background: linear-gradient(to bottom left, rgba(255, 0, 0, 0.692), rgb(0, 0, 255));
+
+            padding: 20px;
+
+            animation: shake-box 1.7s ease-out alternate infinite;
+        }
+        div:hover{
+            box-shadow: 15px 10px 5px rgba(0, 0, 0, 0.24);
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam, minima debitis! Distinctio iste voluptas provident, quae assumenda et accusamus amet eum rerum officia magni necessitatibus deserunt delectus reiciendis debitis at.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam voluptas hic optio ab maxime distinctio cumque asperiores soluta voluptatem natus numquam corporis porro, neque blanditiis officia dolore similique nesciunt. Reiciendis. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sapiente veniam vitae placeat mollitia blanditiis laboriosam? Deleniti, eius! Sit, maiores nostrum aperiam molestias rem minima blanditiis iure, voluptatibus nesciunt deleniti asperiores. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur nam tenetur, autem reiciendis incidunt, labore excepturi dicta quidem eveniet illo, obcaecati consequuntur. Ipsam vero repudiandae, dolore facere eveniet natus illo. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Neque pariatur aliquid et. Voluptates earum itaque inventore, explicabo id provident maxime voluptate autem enim illum ipsa, architecto reprehenderit at quam? Quia. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad officiis maxime odio similique natus vitae adipisci id accusamus voluptatem iure. Necessitatibus aspernatur at minima accusantium consequatur officia nihil, dolore tempora. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facilis, alias molestias at iste beatae cum quia quis ab ex dolorem tempore! Accusantium nam, distinctio blanditiis deserunt autem eligendi vero sequi? </p>
+    </div>
+</body>
+</html>

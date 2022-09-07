@@ -1,0 +1,119 @@
+@keyframes fundo-bg{
+    from{
+        background-color: rgb(168, 164, 164);
+    }
+    to{
+        color: white;
+        background-color: rgb(100, 72, 72);
+    }
+}
+
+
+
+
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: lightgray;
+}
+
+#cabecalho{
+    text-align: center;
+
+    background-color: rgba(255, 0, 0, 0.603);
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.164);
+    padding: 20px 0;
+    color: white;
+    font-size: 32px;
+    margin-bottom: 60px;
+}
+#titulo-principal{
+    font-size: 62px;
+    text-align: center;
+    margin-bottom: 50px;
+}
+#conteudo-principal{
+    text-align: center;
+    color: black;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.377);
+    background-color: rgba(128, 128, 128, 0.589);
+
+    width: 75vw;
+
+    margin: auto;
+
+    animation: fundo-bg 5s ease-in-out alternate infinite;
+}
+#conteudo-principal > h1{
+    font-size: 52px;
+    margin-bottom: 70px;
+}
+.formulario-quiz{
+    font-size: 22px;
+
+
+    display: flex;
+    flex-direction: column;
+}
+.formulario-quiz div{
+    font-family: sans-serif;
+
+    margin-bottom: 2px;
+}
+
+.btn-form-quiz{
+    position: relative;
+    left: 39%;
+
+    background-color: gray;
+    font-size: 32px;
+    color: white;
+    padding: 10px 40px;
+    border: none;
+
+    margin-bottom: 10px;
+
+    transition: all 0.2s ease-in-out;
+}
+.btn-form-quiz:hover{
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.267);
+    background-color: rgb(153, 144, 144);
+    color: rgba(0, 0, 0, 0.849);
+}
+
+.resolucao-quiz{
+    padding: 10px;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.377);
+
+    height: 460px;
+    width: 450px;
+     
+    animation: fundo-bg 5s ease-in-out alternate infinite;
+
+    margin: auto;
+}
+.resolucao-quiz h1{
+    text-align: center;
+    font-size: 45px;
+}
+.resolucao-quiz img{
+    width: 400px;
+}
+
+
+footer{
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.377);
+    color: white;
+    padding: 20px 0;
+    background-color: rgba(255, 0, 0, 0.603);
+    text-align: center;
+
+    margin-top: 60px;
+}

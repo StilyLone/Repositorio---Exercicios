@@ -1,0 +1,80 @@
+@keyframes img-animation{
+    from{
+        transform: scale(105%)
+    }
+    to{
+        transform: scale(110%)
+    }
+}
+
+
+
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Montserrat&display=swap');
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    width: 100vw;
+
+    background: linear-gradient(to top right, crimson, rgba(255, 0, 0, 0.582));
+}
+
+header{
+    padding: 10px;
+    font-size: 38px;
+    font-family: Montserrat, sans-serif;
+    border-bottom: 1px solid white;
+    text-shadow: 3px 3px 10px rgba(255, 255, 255, 0.192);
+    text-align: center;
+
+    margin-bottom: 70px;
+}
+main{
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 32px;
+
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row-reverse;
+
+    border-bottom: 1px solid white;
+}
+main img{
+    width: 400px;
+
+    animation: img-animation ease-in-out 2s alternate infinite;
+}
+main div{
+    border-radius: 10px;
+    padding: 10px;
+    border: 1px solid white;
+
+    text-align: center;
+    width: 500px;
+
+    margin-bottom: 65px;
+
+    transition: all 0.5s ease-in-out;
+}
+main div:hover{
+    background-color: rgba(255, 255, 255, 0.13);
+}
+main div h1{
+    margin-bottom: 40px;
+}
+main div p{
+    text-align: justify;
+}
+
+
+footer{
+    margin-top: 5px;
+    text-align: center;
+}

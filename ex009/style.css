@@ -1,0 +1,77 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 1em;
+}
+
+#cabecalho{
+    text-align: center;
+    color: white;
+    background-color: black;
+    padding: 50px;
+
+    margin-bottom: 20px;
+}
+#cabecalho h1{
+    font-family: cursive;
+    font-size: 3.6em;
+}
+#cabecalho p{
+    font-size: 2em;
+}
+
+#conteudo-principal{
+    text-align: center;
+    font-size: 5vw;
+}
+.secao-texto{
+    margin-bottom: 50px;
+    padding: 20px;
+}
+.secao-img{
+    margin-bottom: 50px;
+    padding: 20px;
+    background-color: rgba(128, 128, 128, 0.664);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+}
+.secao-img p{
+    text-shadow: 1px 1px 0px black;
+    padding: 20px;
+    width: 50%;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.336);
+}
+#img-1{
+    background-image: url('imagens/background-1.jpg');
+}
+#img-2{
+    background-image: url('imagens/background-2.jpg');
+}
+
+
+#rodape{
+    text-align: center;
+    color: white;
+    background-color: black;
+    padding: 20px;
+}
+#rodape h1{
+    margin-bottom: 10px;
+    font-family: cursive;
+    font-size: 2.5em;
+}
+#rodape p{
+    font-size: 1.8em;
+}
+#rodape a{
+    font-weight: bolder;
+    text-decoration: none;
+    color: white;
+}
+#rodape a:hover{
+    text-decoration: underline;
+}
