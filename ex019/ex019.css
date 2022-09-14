@@ -1,0 +1,134 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body{
+	height: 100vh;
+
+	background: linear-gradient(to bottom, green, yellow);
+}
+#cabecalho{
+	text-align: center;
+	padding: 30px;
+	font-size: 1.6em;
+	background-color: rgba(255, 255, 255, .100);
+
+	margin-bottom: 30px;
+}
+#conteudo-principal{
+	display: flex;
+	justify-content: space-between;
+
+	background-color: yellowgreen;
+	padding: 50px;
+}
+.secao-1{
+	width: 500px;
+
+	background-color: rgba(0, 0, 0, .200);
+	padding: 10px;
+	font-size: 1.5em;
+	border-radius: 4px;
+
+	transition: all 0.3s ease-in-out;
+}
+.secao-1:hover{
+	box-shadow: 3px 5px 10px rgba(0, 0, 0, .200);
+	background-color: rgba(0, 0, 0, .300);
+}
+.secao-1 img{
+	position: relative;
+	left: 40px;
+
+	width: 400px;
+
+	margin-bottom: 10px;
+}
+.secao-1 h1{
+	text-align: center;
+	margin-bottom: 10px;
+}
+.secao-1 p{
+	text-align: justify;
+}
+.secao-2{
+	width: 500px;
+
+	background-color: rgba(0, 0, 0, .200);
+	padding: 10px;
+	font-size: 1.5em;
+	border-radius: 4px;
+
+	transition: all 0.3s ease-in-out;
+}
+.secao-2:hover{
+	box-shadow: 3px 5px 10px rgba(0, 0, 0, .200);
+	background-color: rgba(0, 0, 0, .300);
+}
+.secao-2 img{
+	position: relative;
+	left: 40px;
+
+	width: 400px;
+
+	margin-bottom: 10px;
+}
+.secao-2 h1{
+	margin-bottom: 10px;
+	text-align: center;
+}
+.secao-2 p{
+	text-align: justify;
+}
+
+@media (min-width: 900px) and (max-width: 1360px){
+	.secao-1{
+		margin-right: 20px;
+	}
+	.secao-1 img{
+		width: 350px;
+	}
+
+	.secao-2 img{
+		width: 350px;
+	}
+}
+
+@media (min-width: 500px) and (max-width: 900px){
+	#conteudo-principal{
+		flex-direction: column;
+	}
+	.secao-1{
+		width: 500px;
+		margin-bottom: 30px;
+	}
+}
+
+@media (max-width: 500px){
+	#cabecalho{
+		position: sticky;
+		top: -1px;
+
+		background-color: rgba(255, 255, 255, .600);
+	}
+
+	#conteudo-principal{
+		flex-direction: column;
+	}
+
+	.secao-1{
+		width: 400px;
+		margin-bottom: 30px;
+	}
+	.secao-1 img{
+		width: 300px;
+	}
+	.secao-2{
+		width: 400px;
+	}
+	.secao-2 img{
+		width: 300px;
+	}
+}

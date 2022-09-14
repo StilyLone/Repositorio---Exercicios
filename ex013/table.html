@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabela de </title>
+    <style>
+        @keyframes bg-animation{
+            0%{
+                background-position: 0% 50%;
+            }
+            50%{
+                background-position: 100% 50%;
+            }
+            100%{
+                background-position: 0% 50%;
+            }
+        }
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            color: white;
+            background: linear-gradient(45deg, black, gray);
+            background-size: 300% 300%;
+
+            width: 100vw;
+            height: 100vh;
+
+            animation: bg-animation 12s ease-in alternate infinite;
+        }
+        .container{
+            position: relative;
+            top: 160px;
+        }
+        h2{
+            margin-bottom: 30px;
+            text-align: center;
+        }
+        table{
+            margin: auto;
+            width: 400px;
+            height: 200px;
+            border: 1px solid black;
+            border-collapse: collapse;
+        }
+        td{
+            padding: 10px;
+            border: 1px solid black;
+
+            transition: all 0.3s ease-in-out;
+        }
+        td:hover{
+            color: black;
+            background-color: rgba(255, 255, 255, 0.404);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Nomes, Tamanhos e Idade</h2>
+        <table>
+            <tr>
+                <td>Ricardo</td>
+                <td>Jefferson</td>
+                <td>Ariel</td>
+            </tr>
+            <tr>
+                <td>13 Anos</td>
+                <td>13 Anos</td>
+                <td>89 Anos</td>
+            </tr>
+            <tr>
+                <td>1.56m</td>
+                <td>1.23m</td>
+                <td>17Cm</td>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>

@@ -1,0 +1,96 @@
+
+
+
+@keyframes bg-animation{
+	0%{
+		background-position: 0% 50%;
+	}
+	50%{
+		background-position: 100% 50%;
+	}
+	100%{
+		background-position: 0% 50%;
+	}
+}
+@keyframes animacao-img{
+	from{
+		transform: scale(98%%) skew(0deg);
+	}
+	to{
+		transform: scale(106%) skew(-2deg);
+	}
+}
+
+
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body{
+	width: 98vw;
+	height: 100vh;
+
+	background: linear-gradient(25deg, green, rgba(0, 0, 0, .800));
+	background-size: 300% 300%;
+
+	animation: bg-animation 13s ease-in-out alternate infinite;
+}
+#cabecalho{
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+
+	border-bottom: 1px solid rgba(255, 255, 255, .330);
+	box-shadow: 3px 3px 10px rgba(0, 0, 0, .100);
+	padding: 15px;
+}
+#cabecalho a{
+	font-size: 1.3em;
+	text-decoration: none;
+	color: white;
+
+	transition: all 0.2s ease-in-out;
+}
+#cabecalho a:hover{
+	border-radius: 3px;
+	background-color: rgba(255, 255, 255, 0.120);
+	padding: 5px 0;
+}
+
+.secao-1{
+	margin-top: 40px;
+
+	align-items: center;
+	display: flex;
+	justify-content: space-around;
+}
+.secao-1 img{
+	animation: animacao-img 2s ease-in-out alternate infinite;
+}
+.div-secao-1{
+	padding: 30px;
+	font-size: 1.1em;
+	border-radius: 10px;
+	background-color: rgba(255, 255, 255, .200);
+	box-shadow: 5px 3px 10px rgba(0, 0, 0, .200);
+
+	width: 400px;
+}
+
+#rodape{
+	color: rgba(255, 255, 255, .600);
+	padding: 15px 0;
+	border-top: 1px solid rgba(255, 255, 255, .330);
+	margin-top: 35px;
+
+	display: flex;
+	justify-content: center;
+}
+#rodape h4{
+	margin-right: 20px;
+}
+#rodape h4:hover{
+	color: rgba(255, 255, 255, .670);
+}

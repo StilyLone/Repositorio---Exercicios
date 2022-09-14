@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="ex016.css">
+	<title>Tabela - Despesas</title>
+
+	<style type="text/css">
+		@keyframes imagem-fundo{
+			to{
+				background-image: url('imagens/dinheiro2.jpg');
+			}
+		}
+
+		body{
+			height: 100vh;
+			width: 98vw;
+
+			background-size: 150% 150%;
+			background-image: url('imagens/dinheiro1.jpg');
+
+			animation: imagem-fundo 13s ease-in alternate infinite;
+		}
+		caption{
+			color: white;
+			margin-bottom: 10px;
+			padding: 20px;
+			background-color: rgba(0, 0, 0, .200);
+		}
+		table{
+			margin: auto;
+			background-color: white;
+			box-shadow: 7px 7px 10px rgba(0, 0, 0, .200);
+			font-size: 1.5em;
+			border-collapse: collapse;
+			width: 500px;
+		}
+		th{
+			color: white;
+			background-color: gray;
+		}
+		td:hover{
+			background-color: lightgray;
+		}
+		td, th{
+			padding: 20px;
+			border: 1px solid black;
+
+			transition: all 0.1s ease-in;
+		}
+	</style>
+</head>
+<body>
+	<table>
+		<caption>Tabela de Receitas & Receitas ©©</caption>
+		<thead>
+			<th>Receita ©</th>
+			<th>Origem ©</th>
+			<th>Despesa ©</th>
+			<th>Total ©</th>
+		</thead>
+		<tbody>
+			<tr>
+				<td>1.200R$ »</td>
+				<td>Salario Minimo</td>
+				<td>200R$ »</td>
+				<td>1.000R$ »</td>
+			</tr>
+			<tr>
+				<td>1.200R$ »</td>
+				<td>Salario Minimo</td>
+				<td>250R$ »</td>
+				<td>950R$ »</td>
+			</tr>
+			<tr>
+				<td>1.200R$ »</td>
+				<td>Salario Minimo</td>
+				<td>100R$ »</td>
+				<td>1.100R$ »</td>
+			</tr>
+			<tr>
+				<td>1.200R$ »</td>
+				<td>Salario Minimo</td>
+				<td>600R$ »</td>
+				<td>400R$ »</td>
+			</tr>
+			<tr>
+				<td>1.200R$ »</td>
+				<td>Salario Minimo</td>
+				<td>50R$ »</td>
+				<td>1.150R$ »</td>
+			</tr>
+			<tr>
+				<td>1.200R$ »</td>
+				<td>Salario Minimo</td>
+				<td>800R$ »</td>
+				<td>200R$ »</td>
+			</tr>
+			<tr>
+				<td>1.900R$ »</td>
+				<td>Freelance</td>
+				<td>200R$ »</td>
+				<td>1.700R$ »</td>
+			</tr>
+		</tbody>
+	</table>
+</body>
+</html>

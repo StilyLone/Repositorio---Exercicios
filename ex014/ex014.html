@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href="ex013.css" rel="stylesheet">
+	<title>Documet - Tabela</title>
+
+	<style type="text/css">
+		@keyframes animacao-bg{
+			0%{
+				background-position: 0% 50%;
+			}
+			50%{
+				background-position: 50% 100%;
+			}
+			100%{
+				background-position: 0% 50%;
+			}
+		}
+
+
+		body{
+			width: 98vw;
+			height: 95vh;
+
+			background-size: 300% 300%;
+			background-image: linear-gradient(45deg, gray, lightgray);
+
+			animation: animacao-bg 12s ease-in-out alternate infinite;
+		}
+		table{
+			position: relative;
+			top: 110px;
+
+			margin: auto;
+			border-collapse: collapse;
+			width: 500px;
+		}
+		caption{
+			font-size: 1.5em;
+			padding: 10px;
+			background-color: rgba(0, 0, 0, .111);
+		}
+		th{
+			background-color: darkgray;
+		}
+		td:hover{
+			background-color: gray;
+		}
+		td{
+			background-color: lightgray;
+		}
+		td, th{
+			padding: 10px;
+			font-size: 1.4em;
+			border: 1px solid black;
+		}
+		.numero{
+			text-align: right;
+		}
+	</style>
+</head>
+<body>
+	<table>
+		<caption>Populacao do Brasil</caption>
+		<thead>
+			<th>Estado</th>
+			<th>População</th>
+		</thead>
+		<tbody>
+			<tr>
+				<td>São Paulo</td>
+				<td class="numero">46 649 132</td>
+			</tr>
+			<tr>
+				<td>Minas Gerais</td>
+				<td class="numero">46 649 132</td>
+			</tr>
+			<tr>
+				<td>Rio de Janeiro</td>
+				<td class="numero">17 463 349</td>
+			</tr>
+			<tr>
+				<td>Bahia</td>
+				<td class="numero">14 985 284</td>
+			</tr>
+			<tr>
+				<td>Paraná</td>
+				<td class="numero">10 444 526</td>
+			</tr>
+			<tr>
+				<td>Pernambuco</td>
+				<td class="numero"> 12 333 656</td>
+			</tr>
+		</tbody>
+		<tfoot>
+			<th>População Total</th>
+			<th>210 000 000</th>
+		</tfoot>
+	</table>
+</body>
+</html>

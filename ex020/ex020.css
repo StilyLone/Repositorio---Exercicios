@@ -1,0 +1,33 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body{
+	background-color: lightgray;
+}
+
+table{
+	position: relative;
+	top: 120px;
+
+	margin: auto;
+	border-collapse: collapse;
+	box-shadow: 5px 8px 10px rgba(0, 0, 0, .200);
+	width: 500px;
+}
+caption{
+	background-color: rgba(255, 255, 255, .200);
+	padding: 20px;
+	font-size: 1.6em;
+}
+td, th{
+	font-size: 1.9em;
+	color: white;
+	background-color: dimgray;
+	padding: 20px;
+	border: 1px solid black;
+}
+.dados-numero{
+	text-align: right;
+}
